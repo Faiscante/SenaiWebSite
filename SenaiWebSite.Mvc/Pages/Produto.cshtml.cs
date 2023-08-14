@@ -1,13 +1,13 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace SenaiWebSite.Mvc.Pages
 {
-    public class ContatoModel : PageModel
+    public class IndexModel : PageModel
     {
-        private readonly ILogger<ContatoModel> _logger;
+        private readonly ILogger<IndexModel> _logger;
 
-        public ContatoModel(ILogger<ContatoModel> logger)
+        public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
         }

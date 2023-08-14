@@ -1,497 +1,57 @@
 ﻿@page
-@model IndexModel
+@model SenaiWebSite.Mvc.Pages.InicialModel
 @{
-    ViewData["Title"] = "Home page";
 }
 
-<div class="row">
-
-    <div class="col-4">
-        <div class="card w-100 text-center" style="width: 18rem;">
-           <div id="carouselIndicators1" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="4" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144385_1.webp" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144386_1.webp" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144387_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144388_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144389_1.webp" alt="Third slide">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators1" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators1" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-              </button>
-           </div>
-
-           <div class="card-body">
-              <p class="card-title">
-                 <h2> Mercedes Benz</h2>
-              </p>
-
-              <p class="card-subtitle">
-                  <h5>Classe A AMG 2023</h5>
-              </p>
-
-              <p class="card-text">
-                  <p>A partir de R$439.900</p>            
-                  <button  class="btn btn-success" >Comprar Agora</button>    
-              </p>               
+  <div class="row align-items-center" >        
+     <div class="container">
+        <div class="row">                 
+           <div class="col-15">  
+             <h4 class="p-3 mb-5 rounded-pill border border-2 border-end-0 border-bottom-0">Lista de Marcas Disponíveis</h4>                
+              <form class="row g-3">
+                 <div class="col-10">
+                   <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escolha a marca...">
+                    <datalist id="datalistOptions">                       
+                       <option>Mercedes Benz </option>
+                       <option>Land Rover </option>
+                       <option>Maserati </option>
+                       <option>BMW </option>
+                       <option>Jeep </option>
+                       <option>Porsche</option>
+                       <option>Ford </option>
+                       <option>BYD</option>
+                    </datalist>                       
+                 </div>
+                        
+                 <div class="col-auto">                       
+                    <button type="submit" class="btn btn-primary mb-3">Pesquisar</button>
+                 </div>
+              </form>  
            </div>
         </div>
-    </div>
+     </div>
+  </div>
 
-    <div class="col-4">
-        <div class="card w-100 text-center" style="width: 18rem;">
-           <div id="carouselIndicators2" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="4" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144243_1.webp" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144244_1.webp" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144245_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144246_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144247_1.webp" alt="Third slide">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators2" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators2" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-              </button>
-           </div>
+  <style>
+      body {
+          margin: 0;
+          padding: 0;
+          background-image: url('https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          font-family: Arial, sans-serif;
+      }      
+      h4{
+           color:whitesmoke;
+           text-align:center;  
+           font-size:xxx-large;
+           font-family: sans-serif;
+      }          
+  </style>  
 
-           <div class="card-body">
-              <p class="card-title">
-                 <h2> Land Rover</h2>
-              </p>
+  
 
-              <p class="card-subtitle">
-                  <h5>Defender 3.0 D300 HSE 110 4WD mhev </h5>
-              </p>
-
-              <p class="card-text">
-                  <p>A partir de R$664.950</p>            
-                  <button  class="btn btn-success" >Comprar Agora</button>    
-              </p>               
-           </div>
-        </div>
-    </div>
-
-    <div class="col-4">
-        <div class="card w-100 text-center" style="width: 18rem;">
-           <div id="carouselIndicators3" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators3" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators3" data-bs-slide-to="4" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/143973_1.webp" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/143974_1.webp" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/143975_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/143976_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/143977_1.webp" alt="Third slide">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators3" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators3" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-              </button>
-           </div>
-
-           <div class="card-body">
-              <p class="card-title">
-                 <h2> Maserati</h2>
-              </p>
-
-              <p class="card-subtitle">
-                  <h5>Ghibli 2.0 MHEV GT 2023</h5>
-              </p>
-
-              <p class="card-text">
-                  <p>A partir de R$913.799</p>            
-                  <button  class="btn btn-success" >Comprar Agora</button>    
-              </p>               
-           </div>
-        </div>
-    </div>
-
-    <div class="col-4">
-        <div class="card w-100 text-center" style="width: 18rem;">
-           <div id="carouselIndicators4" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="4" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/143777_1.webp" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/143778_1.webp" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/143779_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/143780_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/143781_1.webp" alt="Third slide">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators4" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators4" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-              </button>
-           </div>
-
-           <div class="card-body">
-              <p class="card-title">
-                 <h2> BMW</h2>
-              </p>
-
-              <p class="card-subtitle">
-                  <h5>X3 M40I 3.0 M 50 Years 2023</h5>
-              </p>
-
-              <p class="card-text">
-                  <p>A partir de R$397.950</p>            
-                  <button  class="btn btn-success" >Comprar Agora</button>    
-              </p>               
-           </div>
-        </div>
-    </div>
-
-    <div class="col-4">
-        <div class="card w-100 text-center" style="width: 18rem;">
-           <div id="carouselIndicators5" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators5" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators5" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators5" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators5" data-bs-slide-to="4" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/140718_1.webp" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/140719_1.webp" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/140720_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/140721_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/140722_1.webp" alt="Third slide">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators5" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators5" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-              </button>
-           </div>
-
-           <div class="card-body">
-              <p class="card-title">
-                 <h2> Jeep</h2>
-              </p>
-
-              <p class="card-subtitle">
-                  <h5>Commander 2.0 TD380 Limited 4WD 2023</h5>
-              </p>
-
-              <p class="card-text">
-                  <p>A partir de 229.990</p>            
-                  <button  class="btn btn-success" >Comprar Agora</button>    
-              </p>               
-           </div>
-        </div>
-    </div>
-
-    <div class="col-4">
-        <div class="card w-100 text-center" style="width: 18rem;">
-           <div id="carouselIndicators6" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators6" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators6" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators6" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators6" data-bs-slide-to="4" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144145_1.webp" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144146_1.webp" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144147_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144148_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/144149_1.webp" alt="Third slide">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators6" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators6" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-              </button>
-           </div>
-
-           <div class="card-body">
-              <p class="card-title">
-                 <h2> Porsche</h2>
-              </p>
-
-              <p class="card-subtitle">
-                  <h5>Panamera 4.0 Turbo V8 E-Hybrid S 2023</h5>
-              </p>
-
-              <p class="card-text">
-                  <p>A partir de 689.000</p>            
-                  <button  class="btn btn-success" >Comprar Agora</button>    
-              </p>               
-           </div>
-        </div>
-    </div>
-
-    <div class="col-4">
-        <div class="card w-100 text-center" style="width: 18rem;">
-           <div id="carouselIndicators7" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators7" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators7" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators7" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators7" data-bs-slide-to="4" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/145437_1.webp" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/145438_1.webp" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/145439_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/145440_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/145441_1.webp" alt="Third slide">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators7" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators7" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-              </button>
-           </div>
-
-           <div class="card-body">
-              <p class="card-title">
-                 <h2>Ford</h2>
-              </p>
-
-              <p class="card-subtitle">
-                  <h5>Maverick 2.0 Lartir FX4 2023</h5>
-              </p>
-
-              <p class="card-text">
-                  <p>A partir de 244.890</p>            
-                  <button  class="btn btn-success" >Comprar Agora</button>    
-              </p>               
-           </div>
-        </div>
-    </div>
-
-    <div class="col-4">
-        <div class="card w-100 text-center" style="width: 18rem;">
-           <div id="carouselIndicators8" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators8" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators8" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators8" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators8" data-bs-slide-to="4" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/145413_1.webp" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/145414_1.webp" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/145415_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/145416_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/145417_1.webp" alt="Third slide">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators8" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators8" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-              </button>
-           </div>
-
-           <div class="card-body">
-              <p class="card-title">
-                 <h2>Ford</h2>
-              </p>
-
-              <p class="card-subtitle">
-                  <h5>Bronco Sport 2.0 WildTrak 4WD (Aut) 2023</h5>
-              </p>
-
-              <p class="card-text">
-                  <p>A partir de 272.990</p>            
-                  <button  class="btn btn-success" >Comprar Agora</button>    
-              </p>               
-           </div>
-        </div>
-    </div>
-
-    <div class="col-4">
-        <div class="card w-100 text-center" style="width: 18rem;">
-           <div id="carouselIndicators9" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators9" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators9" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators9" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators9" data-bs-slide-to="4" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/141550_1.webp" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/141551_1.webp" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/141552_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/141553_1.webp" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                     <img class="d-block w-100" src="https://img1.icarros.com/dbimg/galeriaimgmodelo/8/141554_1.webp" alt="Third slide">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators9" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators9" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-              </button>
-           </div>
-
-           <div class="card-body">
-              <p class="card-title">
-                 <h2>BYD</h2>
-              </p>
-
-              <p class="card-subtitle">
-                  <h5>HAN 86kWh BEV 4WD 2023</h5>
-              </p>
-
-              <p class="card-text">
-                  <p>A partir de 539.990</p>            
-                  <button  class="btn btn-success" >Comprar Agora</button>    
-              </p>               
-           </div>
-        </div>
-    </div>
-</div>
-
-
-
+  
+    
+    
